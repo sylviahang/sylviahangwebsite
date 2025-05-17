@@ -733,6 +733,36 @@ slider-animating {
   min-height: calc(100vh - 200px);
   position: relative;
   z-index: 1;
+  padding: 20px 0;
+  overflow: visible; /* Ensure content can extend beyond */
+}
+
+/* Add media query for shorter screens */
+@media (max-height: 700px) {
+  .hero {
+    min-height: auto;
+    padding: 40px 0;
+  }
+  
+  .hero-content {
+    flex-direction: row; /* Keep row layout */
+    gap: 30px;
+  }
+  
+  .hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .hero-content h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.3rem;
+  }
+  
+  .hero-content p {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
 }
 
 .hero-content {
@@ -850,10 +880,6 @@ body.dark-mode .hero-content p {
   .hero-content p {
     font-size: 1rem;
   }
-  
-  .hero-image {
-    max-width: 300px;
-  }
 }
 
 @media (max-width: 480px) {
@@ -863,10 +889,6 @@ body.dark-mode .hero-content p {
   
   .hero-content h1 {
     font-size: 2.5rem;
-  }
-  
-  .hero-image {
-    max-width: 250px;
   }
 }
 
@@ -1281,23 +1303,52 @@ body.dark-mode .footer-image {
         min-height: 100vh;
         height: auto;
         background-attachment: fixed;
+        overflow-y: auto;
+    }
+    
+    .hero {
+        min-height: auto;
+        padding: 20px 0;
+    }
+    
+    .hero-content {
+        flex-direction: column; /* Stack on mobile due to width constraints */
+        gap: 20px;
     }
     
     .navbar {
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
+        padding-bottom: 10px;
     }
 
     .logo {
         flex: 1;
         align-items: center;
+        margin-bottom: 10px;
     }
 
     .nav-links {
-        visibility: hidden;
+        visibility: visible;
+        display: flex;
+        position: relative;
+        left: auto;
+        transform: none;
+        margin-bottom: 15px;
+        width: 100%;
+        justify-content: center;
     }
-
+    
+    .nav-link {
+        padding: 8px 12px;
+        font-size: 0.9rem;
+        background-color: rgba(255, 255, 255, 0.1);
+        margin: 0 5px;
+        border-radius: var(--border-radius);
+        color: white;
+    }
+    
     .toggle-container {
         visibility: hidden;
     }
@@ -1349,6 +1400,12 @@ body.dark-mode .footer-image {
         min-height: 100vh;
         height: auto;
         background-attachment: fixed;
+        overflow-y: auto;
+    }
+    
+    .hero {
+        min-height: auto;
+        padding: 30px 0;
     }
     
     .navbar {
@@ -1358,9 +1415,24 @@ body.dark-mode .footer-image {
     }
   
     .nav-links {
-        visibility: hidden;
+        visibility: visible;
+        position: relative;
+        left: auto;
+        transform: none;
+        margin: 10px auto;
+        width: 100%;
+        justify-content: center;
+        order: 3;
     }
-  
+    
+    .nav-link {
+        padding: 8px 12px;
+        background-color: rgba(255, 255, 255, 0.1);
+        margin: 0 5px;
+        border-radius: var(--border-radius);
+        color: white;
+    }
+    
     .hero-content h1 {
         font-size: 2.5rem;
     }
@@ -1403,6 +1475,7 @@ body.dark-mode .footer-image {
   display: flex;
   flex-direction: column;
   position: relative;
+  overflow-y: auto; /* Allow scrolling */
 }
 
 .overlay {
@@ -2440,5 +2513,61 @@ body.dark-mode .project-highlight-box {
   .navbar, .footer {
     position: relative;
     z-index: 1;
+  }
+}
+
+/* Add special handling for very short screens */
+@media (max-height: 500px) {
+  .hero {
+    min-height: auto;
+    padding: 20px 0;
+  }
+  
+  .hero-content {
+    flex-direction: row; /* Maintain row layout */
+    gap: 30px;
+  }
+  
+  .hero-content h1 {
+    font-size: 2rem;
+    margin-bottom: 0.3rem;
+  }
+  
+  .hero-content h2 {
+    font-size: 1.2rem;
+    margin-bottom: 0.2rem;
+  }
+  
+  .hero-content p {
+    font-size: 0.9rem;
+    margin-bottom: 0.3rem;
+    line-height: 1.4;
+  }
+  
+  /* Allow scrolling on very short screens */
+  .home-page {
+    min-height: auto;
+    height: auto;
+    overflow-y: auto;
+  }
+}
+
+/* Combine width and height media queries for better scaling */
+@media (max-width: 600px) and (max-height: 700px) {
+  .hero-content {
+    padding: 10px 0;
+    flex-direction: column; /* Only change to column on both narrow AND short screens */
+  }
+  
+  .navbar {
+    padding-bottom: 5px;
+  }
+  
+  .logo {
+    margin-bottom: 5px;
+  }
+  
+  .nav-links {
+    margin-bottom: 5px;
   }
 }
