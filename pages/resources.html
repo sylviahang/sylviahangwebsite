@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Sylvia Hang</title>
+    <!-- Scripts -->
+    <script src="../assets/js/search.js"></script>
+    <script src="../assets/js/theme_toggle.js"></script>
+    <script src="../assets/js/settings_toggle.js"></script>
+    <script src="../assets/js/alt-text.js"></script>
+    <script src="../assets/js/tts.js"></script>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <!-- <link rel="icon" href="../assets/images/logos/favicon.svg" type="favicon"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!--NAVIGATION-->
+    <nav class="navbar">
+        <!-- Left section - Logo -->
+        <div class="logo">
+            <a href="../index.html">
+                <div class="logo-text">SH</div>
+            </a>
+        </div>
+
+        <!-- Middle section - Nav Links -->
+        <div class="nav-links">
+            <a href="about.html" class="nav-link">Contact</a>
+            <a href="portfolio.html" class="nav-link">Portfolio</a>
+        </div>
+
+        <!-- Right section - Search & Toggle -->
+        <div class="navbar-right">
+            <!--Search bar-->
+            <div class="search-container">
+                <input type="text" placeholder="Search" oninput="performSearch()">
+                <div id="searchResults" class="search-results"></div>
+            </div>
+
+            <!--Light/Dark Toggle Switch-->
+            <div class="toggle-container">
+                <label class="switch">
+                    <input type="checkbox" id="darkModeToggle">
+                    <span class="slider"></span>
+                </label>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="base-body">
+            <div class="base-header">
+                <h1>Portfolio</h1>
+                <h2>A collection of my creative work and projects</h2>
+            </div>
+
+            <!-- Portfolio Section -->
+            <section class="portfolio">
+                <div class="portfolio-grid">
+                    <!-- Portfolio Item 1 -->
+                    <div class="portfolio-item">
+                        <div class="portfolio-image">
+                            <img src="../assets/images/portfolio-1.jpg" alt="Short Film Project">
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>Urban Echoes</h3>
+                            <h4>Short Film</h4>
+                            <p>A poetic exploration of city life through the eyes of its overlooked residents. This short documentary captures the rhythm and pulse of urban spaces.</p>
+                            <a href="https://vimeo.com" class="portfolio-link" target="_blank">Watch Film →</a>
+                        </div>
+                    </div>
+
+                    <!-- Portfolio Item 2 -->
+                    <div class="portfolio-item">
+                        <div class="portfolio-image">
+                            <img src="../assets/images/portfolio-2.jpg" alt="Music Video">
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>Neon Dreams</h3>
+                            <h4>Music Video</h4>
+                            <p>A vibrant music video that blends surreal imagery with choreographed sequences, creating a dreamlike visual experience set to electronic music.</p>
+                            <a href="https://youtube.com" class="portfolio-link" target="_blank">Watch Video →</a>
+                        </div>
+                    </div>
+
+                    <!-- Portfolio Item 3 -->
+                    <div class="portfolio-item">
+                        <div class="portfolio-image">
+                            <img src="../assets/images/portfolio-3.jpg" alt="Documentary">
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>Cultural Threads</h3>
+                            <h4>Documentary</h4>
+                            <p>An intimate look at traditional crafts and their modern interpretations, exploring how cultural heritage evolves across generations.</p>
+                            <a href="https://vimeo.com" class="portfolio-link" target="_blank">Watch Documentary →</a>
+                        </div>
+                    </div>
+
+                    <!-- Portfolio Item 4 -->
+                    <div class="portfolio-item">
+                        <div class="portfolio-image">
+                            <img src="../assets/images/portfolio-4.jpg" alt="Experimental Film">
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>Fragmented Reality</h3>
+                            <h4>Experimental Film</h4>
+                            <p>A bold exploration of perception and reality through fractured narratives and innovative visual techniques.</p>
+                            <a href="https://youtube.com" class="portfolio-link" target="_blank">Watch Film →</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <a href="mailto:sylviahang18@gmail.com" target="_blank" title="Email">
+                <img src="../assets/images/logos/gmail_logo.svg" alt="Email" class="footer-image email-logo">
+            </a>
+            <a href="https://github.com" target="_blank" title="GitHub">
+                <img src="../assets/images/logos/github_logo.svg" alt="GitHub Logo" class="footer-image github-logo">
+            </a>
+        </div>
+    </footer>
+</body>
+
+</html>

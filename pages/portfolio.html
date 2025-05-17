@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Sylvia Hang</title>
+    <!-- Scripts -->
+    <script src="../assets/js/search.js"></script>
+    <script src="../assets/js/theme_toggle.js"></script>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!--NAVIGATION-->
+    <nav class="navbar">
+        <!-- Left section - Logo -->
+        <div class="logo">
+            <a href="../index.html">
+                <div class="logo-text">SH</div>
+            </a>
+        </div>
+
+        <!-- Middle section - Nav Links -->
+        <div class="nav-links">
+            <a href="about.html" class="nav-link">About</a>
+            <a href="portfolio.html" class="nav-link">Portfolio</a>
+        </div>
+
+        <!-- Right section - Search & Toggle -->
+        <div class="navbar-right">
+            <!--Search bar-->
+            <div class="search-container">
+                <input type="text" placeholder="Search" oninput="performSearch()">
+                <div id="searchResults" class="search-results"></div>
+            </div>
+
+            <!--Light/Dark Toggle Switch-->
+            <div class="toggle-container">
+                <label class="switch">
+                    <input type="checkbox" id="darkModeToggle">
+                    <span class="slider"></span>
+                </label>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="about-container">
+            <section class="about-hero">
+                <div class="about-hero-content">
+                    <h1>Portfolio</h1>
+                    <div class="about-hero-tagline">A collection of my creative work and projects</div>
+                </div>
+            </section>
+
+            <!-- Portfolio Section -->
+            <section class="portfolio">
+                <div class="portfolio-grid">
+
+                    <!-- Portfolio Item 1 -->
+                    <div id="my_dad" class="portfolio-item">
+                        <div class="portfolio-image">
+                            <img src="../assets/images/my_dad.png" alt="我的爸爸 (MY DAD)">
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>我的爸爸 (MY DAD)</h3>
+                            <h4>Personal Documentary</h4>
+                            <p>A personal documentary that pieces together the life of my late father through a series of family interviews.</p>
+                            <a href="https://www.youtube.com/watch?v=0whqwuXGWTI" class="portfolio-link" target="_blank">Watch Film</a>
+                        </div>
+                    </div>
+
+                    <!-- Portfolio Item 2 -->
+                    <div id="gatorverse" class="portfolio-item">
+                        <div class="portfolio-image">
+                            <img src="../assets/images/gatorverse.png" alt="Gatorverse - Allegheny College Hackathon 2025">
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>GATORVERSE - ALLEGHENY COLLEGE HACKATHON 2025</h3>
+                            <h4>Interview</h4>
+                            <p>An interview with the Allegheny College ACM Student Chapter's 2025 Board for their Hackathon event.</p>
+                            <a href="https://www.instagram.com/reel/DIPFLayqKlB/" class="portfolio-link" target="_blank">Watch Film</a>
+                        </div>
+                    </div>
+
+                    <!-- Portfolio Item 3 -->
+                    <div id="hong-kong" class="portfolio-item">
+                        <div class="portfolio-image">
+                            <img src="../assets/images/Trip_To_HK_Thumbnail.png" alt="Trip to Hong Kong">
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>HONG KONG THROUGH MY EYES</h3>
+                            <h4>Travel Documentary</h4>
+                            <p>An immersive exploration of the vibrant cities of Hong Kong and Shenzhen.</p>
+                            <a href="https://www.youtube.com/shorts/5zpGdJ7ke4I" class="portfolio-link" target="_blank">Watch Film</a>
+                        </div>
+                    </div>
+
+                    <!-- Portfolio Item 4 -->
+                    <div id="sisters-quarrel" class="portfolio-item">
+                        <div class="portfolio-image">
+                            <img src="../assets/images/The_Sister_s_Quarrel.png" alt="The Sister's Quarrel">
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>THE SISTER'S QUARREL</h3>
+                            <h4>Short Film</h4>
+                            <p>A sibling rivalry that takes a dark turn.</p>
+                            <a href="https://www.youtube.com/watch?v=mR9sIPObuyM" class="portfolio-link" target="_blank">Watch Film</a>
+                        </div>
+                    </div>
+
+                    <!-- Portfolio Item 5 -->
+                    <div id="tale-of-lovers" class="portfolio-item">
+                        <div class="portfolio-image">
+                            <img src="../assets/images/Tale_of_Two_Lovers.png" alt="Tale of Two Lovers">
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>A TALE OF TWO LOVERS</h3>
+                            <h4>Short Film</h4>
+                            <p>A heartbreaking love story between two individuals.</p>
+                            <a href="https://www.youtube.com/watch?v=cQmzbax9iHI" class="portfolio-link" target="_blank">Watch Film</a>
+                        </div>
+                    </div>
+
+                    <!-- Portfolio Item 6 -->
+                    <div id="murder-dancefloor" class="portfolio-item">
+                        <div class="portfolio-image">
+                            <img src="../assets/images/Murder_on_the_Dancefloor.png" alt="Murder on the Dancefloor">
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>MURDER ON THE DANCEFLOOR</h3>
+                            <h4>Music Video</h4>
+                            <p>A music video featuring an entertaining plot twist.</p>
+                            <a href="https://www.youtube.com/watch?v=hYoaHxpPS8I" class="portfolio-link" target="_blank">Watch Video</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Portfolio Item 7 -->
+                    <div id="homework-hell" class="portfolio-item">
+                        <div class="portfolio-image">
+                            <img src="../assets/images/Homework_Hell.png" alt="Homework Hell">
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>HOMEWORK HELL</h3>
+                            <h4>Experimental Film</h4>
+                            <p>An experimental short film using stop-motion animation.</p>
+                            <a href="https://www.youtube.com/watch?v=c_sUMhGF4NY" class="portfolio-link" target="_blank">Watch Film</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Portfolio Item 8 -->
+                    <div id="what-is-the-end" class="portfolio-item">
+                        <div class="portfolio-image">
+                            <img src="../assets/images/What_is_the_End.png" alt="What Is The End">
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>WHAT IS THE END</h3>
+                            <h4>Experimental Film</h4>
+                            <p>An experimental short film featuring jump-scare elements.</p>
+                            <a href="https://www.youtube.com/watch?v=-aHa_VPXckQ&t=1s" class="portfolio-link" target="_blank">Watch Film</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Portfolio Item 9 -->
+                    <div id="the-cursed" class="portfolio-item">
+                        <div class="portfolio-image">
+                            <img src="../assets/images/The_Cursed.png" alt="The Cursed">
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>THE CURSED</h3>
+                            <h4>Thriller</h4>
+                            <p>A thriller and suspense film about possession.</p>
+                            <a href="https://www.youtube.com/watch?v=JDHBbOkY7ew" class="portfolio-link" target="_blank">Watch Film</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Portfolio Item 10 -->
+                    <div id="i-see-you" class="portfolio-item">
+                        <div class="portfolio-image">
+                            <img src="../assets/images/I_See_You.png" alt="I See You">
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>I SEE YOU</h3>
+                            <h4>Psychological Thriller</h4>
+                            <p>A short film centered on the feeling of being watched.</p>
+                            <a href="https://www.youtube.com/watch?v=ce8XGlgs24U" class="portfolio-link" target="_blank">Watch Film</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Portfolio Item 11 -->
+                    <div id="certain-type-sadness" class="portfolio-item">
+                        <div class="portfolio-image">
+                            <img src="../assets/images/You_re_My_Certain_Type_of_Sadness.png" alt="You're My Certain Type of Sadness">
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>YOU'RE MY CERTAIN TYPE OF SADNESS</h3>
+                            <h4>Drama</h4>
+                            <p>A short film about remembering a loved one.</p>
+                            <a href="https://www.youtube.com/watch?v=ArqWFNePmwc" class="portfolio-link" target="_blank">Watch Film</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Portfolio Item 12 -->
+                    <div id="places" class="portfolio-item">
+                        <div class="portfolio-image">
+                            <img src="../assets/images/Places.png" alt="Places">
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>PLACES</h3>
+                            <h4>Documentary</h4>
+                            <p>Observational documentary about Allegheny College.</p>
+                            <a href="https://www.youtube.com/watch?v=LfPBhFDGi28" class="portfolio-link" target="_blank">Watch Film</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <a href="mailto:sylviahang18@gmail.com" target="_blank" title="Email">
+                <img src="../assets/images/logos/gmail_logo.svg" alt="Email" class="footer-image email-logo">
+            </a>
+            <a href="https://www.linkedin.com/in/sylvia-hang-975a7a276/" target="_blank" title="LinkedIn">
+                <img src="../assets/images/logos/linkedin_logo.svg" alt="LinkedIn Logo" class="footer-image linkedin-logo">
+            </a>
+        </div>
+    </footer>
+</body>
+
+</html>
